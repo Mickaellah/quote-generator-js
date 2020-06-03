@@ -67,3 +67,14 @@ You can use whatever resource you need for this project. You can use the interne
 -   Clean code (indentation, comments, clear variables and functions names)
 
 ## Good luck, and happy coding ✨
+
+
+--------------------------------------------------------------------------
+- I did not have any idea on how to improve my code, I was thinking about using if statement with the choose between two types of quotation generator but I didn't know how and I stopped it. My code is really small. I follow a guidance that I found in google to make it.
+
+- I tried many things but they didn't work and I erase them. I did lots of researches to see what to do and I saw lots of thing but they are not similar to what we ask to do. They linked with HTML file and there are quite a few things in the HTML file that work with the js file.
+
+- I live some codes in a comment in the js file, it is the same as the one which is written above it but the only difference is that I used function with it. when I uncomment it, everything that I have done disappear.
+
+- And also with the big comment that with the three arrays, they are not working and I commented them out.
+
