@@ -1,62 +1,37 @@
-// This is an array that contains multi-dimentional and each array contains about ten (10) short quotes.
-let quotes = [
-  [
-    "Nothing is as easy as it looks.", "Everything takes longer than you think.", "Anything that can go wrong will go wrong.", "Every solution breeds new problems.", "Nature always sides with the hidden flaw."
-  ],
-  [
-    "Love For All, Hatred For None.", "Change the world by being yourself.", "Every moment is a fresh beginning.", "Never regret anything that made you smile.", "Die with memories, not dreams."
-  ],
-  [
-    "All limitations are self-imposed.", "Tough times never last but tough people do.", "Determine your priorities and focus on them.", "Be so good they can’t ignore you.", "Dream as if you’ll live forever, live as if you’ll die today."
-  ]
-]
-
-// A console.log() method to execute this code in the browser.
-console.log(quotes[0][1], quotes[1][2], quotes[2][2]);
+// Declare the first variable for the first array that contains few quotes.
+  let firstQuote = [
+    "Take the risk or lose the chance,", "God is good,", "Yourself is your enemy,", "You are who you are,"
+  ];
 
 
+// Declare the second variable for the second array that contains few quotes.
+  let secondQuote = [
+    "Making mistakes is no a bad thing,", "Everything is worth trying,", "To try is to risk failure,", "We are raising from our failure,"
+  ];
 
-// Using for...of loop to generate this code.
-for (let quote of quotes[0]) {
-  let randomNumber = Math.floor(Math.random() * quotes[0].length);
-  console.log(`${quotes[0][randomNumber]} ${quote}`);
+
+// Declare the third variable for the third array that contains few quotes.
+  let thirdQuote = [
+    "Be happy with what you have got!", "Never give up.", "Do not lose your hope.", "Being tested is nice."
+  ];
+
+
+// Using the console.log() method to call each array.
+  console.log(firstQuote);
+  console.log(secondQuote);
+  console.log(thirdQuote);
+
+
+// A function which contain four variable, one of them is a variable that concatinate the arrays and the other three calculate the random number of the arrays.
+function newQuotes() {
+  let randomNumber1 = Math.floor(Math.random() * firstQuote.length);
+  let randomNumber2 = Math.floor(Math.random() * secondQuote.length);
+  let randomNumber3 = Math.floor(Math.random() * thirdQuote.length);
+  let randomQuote = firstQuote[randomNumber1] + ' ' + secondQuote[randomNumber2] + ' ' + thirdQuote[randomNumber3];
+  console.log(randomQuote);
 }
 
+newQuotes();
 
-// This is the same thing as above but the only difference is that this one use a function.
-
-// function randomQuote() {
-//   for (let quote of quotes[0]) {
-//     let randomNumber = Math.floor(Math.random() * quotes[0].length);
-//     console.log(`${quotes[0][randomNumber]} ${quote}`);
-//   }
-// }
-
-
-// Also I tried this one but there is nothing that seem to work and I comment it out.
-
-// let firstQuote = [
-//   "Nothing is as easy as it looks.", "Everything takes longer than you think.", "Anything that can go wrong will go wrong.", "Every solution breeds new problems.", "Nature always sides with the hidden flaw."
-// ]
-
-// let secondQuote = [
-//   "Love For All, Hatred For None.", "Change the world by being yourself.", "Every moment is a fresh beginning.", "Never regret anything that made you smile.", "Die with memories, not dreams."
-// ]
-
-// let thirdQuote = [
-//   "All limitations are self-imposed.", "Tough times never last but tough people do.", "Determine your priorities and focus on them.", "Be so good they can’t ignore you.", "Dream as if you’ll live forever, live as if you’ll die today."
-// ]
-
-// function generateQuote() {
-//   let randomNumber1 = Math.floor(Math.random() * (firstQuote.length));
-//   let randomNumber2 = Math.floor(Math.random() * (secondQuote.length));
-//   let randomNumber3 = Math.floor(Math.random() * (thirdQuote.length));
-//   for (let i = 0; i < firstQuote.length + secondQuote.length + thirdQuote.length; i++) {
-//     let randomQuote = firstQuote[randomNumber1] + " " + secondQuote[randomNumber2] + " " + thirdQuote[randomNumber3];
-//     console.log(randomQuote);
-//   }
-//   console.log(randomNumber1, randomNumber, randomNumber3)
-
-// }
 
 
