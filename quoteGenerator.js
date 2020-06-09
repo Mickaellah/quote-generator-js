@@ -12,7 +12,7 @@
 
 // Declare the third variable for the third array that contains few quotes.
   let thirdQuote = [
-    "Be happy with what you have got!", "Never give up.", "Do not lose your hope.", "Being tested is nice."
+    "Be happy with what you have got!", "Never give up.", "Do not lose your hope.", "Being tested is nice." 
   ];
 
 
@@ -22,16 +22,29 @@
   console.log(thirdQuote);
 
 
-// A function which contain four variable, one of them is a variable that concatinate the arrays and the other three calculate the random number of the arrays.
-function newQuotes() {
+// A function that containes the random quote, one of them is a variable that concatinate the arrays and the other three calculate the random number of the arrays.
+
+function newQuote() {
   let randomNumber1 = Math.floor(Math.random() * firstQuote.length);
   let randomNumber2 = Math.floor(Math.random() * secondQuote.length);
   let randomNumber3 = Math.floor(Math.random() * thirdQuote.length);
+
   let randomQuote = firstQuote[randomNumber1] + ' ' + secondQuote[randomNumber2] + ' ' + thirdQuote[randomNumber3];
+
   console.log(randomQuote);
 }
+newQuote();
 
-newQuotes();
+// A variable that allow the user to enter number of quotes that they want to generate.
 
+let quoteNumber = prompt("How many times do you want to generate a random quote?");
+
+// An if statement which sets the condition for the user to choose number between 1 and 5, and a for loop that loops through the quotes.
+
+if (quoteNumber >= 1 && quoteNumber <= 5) {
+  for (let i = 0; i < quoteNumber; i++) {
+    newQuote();
+  }
+}
 
 
