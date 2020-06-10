@@ -22,7 +22,7 @@
   console.log(thirdQuote);
 
 
-// A function that containes the random quote, one of them is a variable that concatinate the arrays and the other three calculate the random number of the arrays.
+// A function that contains the random quote, one of them is a variable that concatinate the arrays and the other three calculate the random number of the arrays.
 
 function newQuote() {
   let randomNumber1 = Math.floor(Math.random() * firstQuote.length);
@@ -33,7 +33,7 @@ function newQuote() {
 
   console.log(randomQuote);
 }
-newQuote();
+// newQuote();
 
 // A variable that allow the user to enter number of quotes that they want to generate.
 
@@ -46,5 +46,14 @@ if (quoteNumber >= 1 && quoteNumber <= 5) {
     newQuote();
   }
 }
+
+
+let bestQuotes = 0;
+while (bestQuotes <= 2) {
+	let generateDifferentQuotes = newQuote();
+	bestQuotes = Number(prompt("Enter a number between 1 or 2 for choosing your quotes:"));
+	if (bestQuotes <= 2);
+}
+
 
 
